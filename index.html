@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Arte Entrelaçada | Macramê artesanal</title>
+
+    <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="topbar">
+      <a class="brand" href="#inicio">
+        <img
+          src="img/logo/logo3.jpeg"
+          alt="Arte Entrelaçada"
+          class="brand-mark"
+        />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <!-- MENU -->
+      <nav class="navigation" id="navigation">
+        <a href="#produtos">Produtos</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contato">Contatos</a>
+
+        <button class="cart-button" id="openCart">
+          Sacola <span id="cartCount">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <h1>
+            Nós que contam histórias, arte que transforma espaços<span>.</span>
+          </h1>
+
+          <p class="hero-description">
+            Peças de macramê feitas à mão, com carinho e dedicação, para trazer
+            personalidade, aconchego e beleza a cada detalhe.
+          </p>
+
+          <a class="primary-button" href="#produtos"> ESCOLHA A SUA </a>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="img/produtos/introducao.jpeg"
+            alt="Decoração artesanal para ambientes"
+          />
+        </div>
+      </section>
+
+      <!-- SESSÕES CLARAS - PRODUTOS -->
+      <section class="intro section-light">
+        <p class="eyebrow">UM POUCO DA NOSSA ARTE</p>
+        <h2>Fios, nós e afeto em cada criação.</h2>
+        <p>
+          Cada peça é produzida artesanalmente, valorizando o tempo, os detalhes
+          e a beleza do feito à mão.
+        </p>
+      </section>
+
+      <!-- PRODUTOS -->
+      <section class="products section-light" id="produtos">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">NOSSA LOJA</p>
+            <h2>Peças que encantam</h2>
+          </div>
+          <p>Escolha uma criação para deixar seu cantinho especial..</p>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+      </section>
+
+      <!-- CURSO -->
+      <section class="course-section" id="cursos">
+        <div class="course-art"></div>
+
+        <div class="course-copy">
+          <p class="eyebrow">APRENDA UMA NOVA ARTE</p>
+          <h2>Crie com as próprias mãos.</h2>
+          <p>
+            Aprenda os nós essenciais do macramê e transforme fios em peças
+            cheias de personalidade.
+          </p>
+          <a class="primary-button" href="#contato"> SAIBA MAIS </a>
+        </div>
+      </section>
+
+      <!-- contato -->
+      <section class="contact section-light" id="contato">
+        <p class="eyebrow">VAMOS CONVERSAR?</p>
+        <h2>Uma peça especial começa com uma ideia.</h2>
+        <p>Entre em contato para consultar encomendas e cursos.</p>
+        <a class="primary-button" id="contactLink" href="#">
+          FALE PELO WHATSAPP
+        </a>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <a class="footer-brand" href="#inicio">Arte Entrelaçada</a>
+      <span>Feito à mão, entrelaçado com amor.</span>
+      <span>© <span id="year"></span> Arte Entrelaçada</span>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay" hidden></div>
+
+    <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+      <div class="cart-header">
+        <h2>Sua sacola</h2>
+        <button id="closeCart">✕</button>
+      </div>
+
+      <div id="cartItems" class="cart-items">
+        <p class="empty-cart">Sua sacola está vazia.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">R$ 0,00</strong>
+        </div>
+        <button class="primary-button checkout-button" id="checkout">
+          FINALIZAR PELO WHATSAPP
+        </button>
+      </div>
+    </aside>
+
+    <!-- Arquivo de funcionalidades -->
+    <script src="script.js"></script>
+  </body>
+</html>
